@@ -19,6 +19,7 @@ This is the right place to start
 - [SecDevOps](#secdevops)
 	- [Definition](#definition-1)
 	- [Practices](#practices-1)
+		- [SAST/DAST into CI/CD](#sastdast-into-cicd)
 
 <!-- /MarkdownTOC -->
 
@@ -128,3 +129,31 @@ Inject failure to ensure security is hardened
 ## Definition
 
 ## Practices
+
+### SAST/DAST into CI/CD
+Source code analysis tools, also referred to as Static Application Security Testing (SAST) Tools, are designed to analyze source code and/or compiled versions of code to help find security flaws.
+Important Selection Criteria
+
+ * Requirement: Must support your programming language, but not usually a key factor once it does.
+ * Types of vulnerabilities it can detect (out of the OWASP Top Ten?) (plus more?)
+ * How accurate is it? False Positive/False Negative rates?
+ *     Does the tool have an OWASP Benchmark score?
+ * Does it understand the libraries/frameworks you use?
+ * Does it require a fully buildable set of source?
+ * Can it run against binaries instead of source?
+ * Can it be integrated into the developer's IDE?
+ * How hard is it to setup/use?
+ * Can it be run continuously and automatically?
+ * License cost for the tool. (Some are sold per user, per org, per app, per line of code analyzed. Consulting licenses are frequently different than end user licenses.)
+
+Open source: bandit (python) https://github.com/PyCQA/bandit, findsecbugs https://find-sec-bugs.github.io/, google codesearchdiggity (not relevant), sonarqube https://www.sonarqube.org/features/integration/ seems promising!!
+
+
+https://github.com/PyCQA/bandit
+https://docs.gitlab.com/ee/user/project/merge_requests/sast.html
+https://www.checkmarx.com/2015/04/29/sast-vs-dast-why-sast-3/
+https://www.sourceclear.com/vulnerability-database/security/arbitrary-file-write/python/sid-6115/summary
+https://www.owasp.org/index.php/Source_Code_Analysis_Tools
+
+
+benchmarking: https://rawgit.com/OWASP/Benchmark/master/scorecard/OWASP_Benchmark_Home.html
