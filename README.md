@@ -1,4 +1,8 @@
 
+# So you want to be a SecDevOps???
+This is the right place to start
+
+![DEVSECOPS](/images/computer.png)
 
 <!-- MarkdownTOC levels="0,1,2,3" autolink="true" -->
 
