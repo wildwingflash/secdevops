@@ -1,21 +1,24 @@
 
-# Dev OPS
 
-<!-- MarkdownTOC levels="1,2,3" autolink="true" -->
+<!-- MarkdownTOC levels="0,1,2,3" autolink="true" -->
 
-- [Definition](#definition)
-- [Practices](#practices)
-	- [Continuous Integration](#continuous-integration)
-	- [Continuous Delivery / Continuous Deploy](#continuous-delivery--continuous-deploy)
-	- [Microservices](#microservices)
-	- [Infraestructure as Code](#infraestructure-as-code)
-	- [Monitoring and Logging](#monitoring-and-logging)
-	- [Comunication and Collaboration](#comunication-and-collaboration)
-- [Best practices](#best-practices)
+- [DevOps](#devops)
+	- [Definition](#definition)
+	- [Practices](#practices)
+		- [Continuous Integration](#continuous-integration)
+		- [Continuous Delivery / Continuous Deploy](#continuous-delivery--continuous-deploy)
+		- [Microservices](#microservices)
+		- [Infraestructure as Code](#infraestructure-as-code)
+		- [Monitoring and Logging](#monitoring-and-logging)
+		- [Comunication and Collaboration](#comunication-and-collaboration)
+		- [Best practices](#best-practices)
 - [SecDevOps](#secdevops)
+	- [Definition](#definition-1)
+	- [Practices](#practices-1)
 
 <!-- /MarkdownTOC -->
 
+# DevOps
 
 ## Definition
 https://aws.amazon.com/es/devops/what-is-devops/
@@ -105,7 +108,7 @@ Airbrake: https://airbrake.io/
 ### Comunication and Collaboration
 
 
-## Best practices
+### Best practices
 train develpment teams to develop secure code
 track security issues the same as software issues
 If infraestructures i snow code, then security should be code
@@ -118,3 +121,6 @@ Inject failure to ensure security is hardened
 
 # SecDevOps
 
+## Definition
+
+## Practices
