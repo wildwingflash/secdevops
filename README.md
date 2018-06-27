@@ -1,6 +1,22 @@
 
 # Dev OPS
 
+<!-- MarkdownTOC levels="1,2,3" autolink="true" -->
+
+- [Definition](#definition)
+- [Practices](#practices)
+	- [Continuous Integration](#continuous-integration)
+	- [Continuous Delivery / Continuous Deploy](#continuous-delivery--continuous-deploy)
+	- [Microservices](#microservices)
+	- [Infraestructure as Code](#infraestructure-as-code)
+	- [Monitoring and Logging](#monitoring-and-logging)
+	- [Comunication and Collaboration](#comunication-and-collaboration)
+- [Best practices](#best-practices)
+- [SecDevOps](#secdevops)
+
+<!-- /MarkdownTOC -->
+
+
 ## Definition
 https://aws.amazon.com/es/devops/what-is-devops/
 In some DevOps models, quality assurance and security teams may also become more tightly integrated with development and operations and throughout the application lifecycle. When security is the focus of everyone on a DevOps team, this is sometimes referred to as DevSecOps.
@@ -33,6 +49,11 @@ Links to Code Review:
 https://github.com/joho/awesome-code-review
 https://github.com/mre/awesome-static-analysis
 
+#### Comparison of CI
+https://hackernoon.com/continuous-integration-circleci-vs-travis-ci-vs-jenkins-41a1c2bd95f5
+https://blog.takipi.com/jenkins-vs-travis-ci-vs-circle-ci-vs-teamcity-vs-codeship-vs-gitlab-ci-vs-bamboo/
+https://stackshare.io/stackups/jenkins-vs-travis-ci-vs-bamboo
+
 
 ### Continuous Delivery / Continuous Deploy
 https://www.thoughtworks.com/es/continuous-delivery
@@ -57,6 +78,9 @@ https://docs.travis-ci.com/user/deployment/releases/
 https://cloud.google.com/solutions/continuous-delivery-with-travis-ci
 https://stackify.com/top-continuous-integration-tools/
 https://www.g2crowd.com/categories/continuous-integration
+example workflows with jeninks
+https://automatingguy.com/2017/11/06/jenkins-pipelines-simple-delivery-flow/
+https://github.com/jjasghar/jenkinsfile_cookbook_pipeline
 
 
 Continuous Deploy tools: ansible, vagrant, circleCI, chef, puppet, drone.io, octopus-deploy
@@ -90,3 +114,7 @@ Automate security test in the build process
 Detect know vulnerabilities duiring the pipeline
 Monitor security in production for known states
 Inject failure to ensure security is hardened
+
+
+# SecDevOps
+
