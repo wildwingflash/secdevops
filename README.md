@@ -19,7 +19,8 @@ This is the right place to start
 - [SecDevOps](#secdevops)
 	- [Definition](#definition-1)
 	- [Practices](#practices-1)
-		- [SAST/DAST into CI/CD](#sastdast-into-cicd)
+		- [SAST into CI/CD](#sast-into-cicd)
+		- [DAST into CI/CD](#dast-into-cicd)
 
 <!-- /MarkdownTOC -->
 
@@ -122,6 +123,7 @@ Automate security test in the build process
 Detect know vulnerabilities duiring the pipeline
 Monitor security in production for known states
 Inject failure to ensure security is hardened
+https://docs.microsoft.com/en-us/azure/devops/
 
 
 # SecDevOps
@@ -130,7 +132,7 @@ Inject failure to ensure security is hardened
 
 ## Practices
 
-### SAST/DAST into CI/CD
+### SAST into CI/CD
 Source code analysis tools, also referred to as Static Application Security Testing (SAST) Tools, are designed to analyze source code and/or compiled versions of code to help find security flaws.
 Important Selection Criteria
 
@@ -148,7 +150,24 @@ Important Selection Criteria
 
 Open source: bandit (python) https://github.com/PyCQA/bandit, findsecbugs https://find-sec-bugs.github.io/, google codesearchdiggity (not relevant), sonarqube https://www.sonarqube.org/features/integration/ seems promising!!
 
+SonarQube issue workflow
+Statuses
+    Open - set by SonarQube on new issues
+    Confirmed - set manually to indicate that the issue is valid
+    Resolved - set manually to indicate that the next analysis should Close the issue
+    Reopened - set automatically by SonarQube when a Resolved issue hasn't actually been corrected
+    Closed - set automatically by SonarQube for automatically created issues. 
 
+Resolutions
+Closed issues will have one of two resolutions:
+    Fixed - set automatically when a subsequent analysis shows that the issue has been corrected
+    Removed - set automatically when either the related coding rule or the file is no longer available. The rule may not be available either because it has been removed from the profile or because the underlying plugin has been uninstalled. The file could be unavailable because it has been removed from the project, moved to a different location or renamed.
+
+Resolved issues will have one of two resolutions:
+    False Positive - set manually
+    Won't Fix - set manually
+
+There are open source solutions and also Commercial ones.
 https://github.com/PyCQA/bandit
 https://docs.gitlab.com/ee/user/project/merge_requests/sast.html
 https://www.checkmarx.com/2015/04/29/sast-vs-dast-why-sast-3/
@@ -157,3 +176,6 @@ https://www.owasp.org/index.php/Source_Code_Analysis_Tools
 
 
 benchmarking: https://rawgit.com/OWASP/Benchmark/master/scorecard/OWASP_Benchmark_Home.html
+
+
+### DAST into CI/CD
