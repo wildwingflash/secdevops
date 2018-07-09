@@ -115,15 +115,15 @@ Airbrake: https://airbrake.io/
 
 
 ### Best practices
-train develpment teams to develop secure code
-track security issues the same as software issues
-If infraestructures i snow code, then security should be code
-Integrate security controls in the software pipeline
-Automate security test in the build process
-Detect know vulnerabilities duiring the pipeline
-Monitor security in production for known states
-Inject failure to ensure security is hardened
-https://docs.microsoft.com/en-us/azure/devops/
+* train develpment teams to develop secure code
+* track security issues the same as software issues
+* If infraestructures i snow code, then security should be code
+* Integrate security controls in the software pipeline
+* Automate security test in the build process
+* Detect know vulnerabilities duiring the pipeline
+* Monitor security in production for known states
+* Inject failure to ensure security is hardened
+* https://docs.microsoft.com/en-us/azure/devops/
 
 
 # SecDevOps
@@ -168,11 +168,11 @@ Resolved issues will have one of two resolutions:
     Won't Fix - set manually
 
 There are open source solutions and also Commercial ones.
-https://github.com/PyCQA/bandit
-https://docs.gitlab.com/ee/user/project/merge_requests/sast.html
-https://www.checkmarx.com/2015/04/29/sast-vs-dast-why-sast-3/
-https://www.sourceclear.com/vulnerability-database/security/arbitrary-file-write/python/sid-6115/summary
-https://www.owasp.org/index.php/Source_Code_Analysis_Tools
+* https://github.com/PyCQA/bandit
+* https://docs.gitlab.com/ee/user/project/merge_requests/sast.html
+* https://www.checkmarx.com/2015/04/29/sast-vs-dast-why-sast-3/
+* https://www.sourceclear.com/vulnerability-database/security/arbitrary-file-write/python/sid-6115/summary
+* https://www.owasp.org/index.php/Source_Code_Analysis_Tools
 
 
 benchmarking: https://rawgit.com/OWASP/Benchmark/master/scorecard/OWASP_Benchmark_Home.html
