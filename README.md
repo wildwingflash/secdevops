@@ -179,3 +179,8 @@ benchmarking: https://rawgit.com/OWASP/Benchmark/master/scorecard/OWASP_Benchmar
 
 
 ### DAST into CI/CD
+Dynamic analysis seems much more complicated to be automated in case of Desktop Applications. 
+We are talking about vulnerability scans, and automated ones. 
+
+https://www.viva64.com/en/t/0070/
+https://www.owasp.org/index.php/Category:Vulnerability_Scanning_Tools
