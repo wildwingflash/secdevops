@@ -19,6 +19,7 @@ This is the right place to start
 - [SecDevOps](#secdevops)
 	- [Definition](#definition-1)
 	- [Practices](#practices-1)
+		- [OWASP TESTING GUIDE 4.0](#owasp-testing-guide-40)
 		- [SAST into CI/CD](#sast-into-cicd)
 		- [DAST into CI/CD](#dast-into-cicd)
 
@@ -131,6 +132,32 @@ Airbrake: https://airbrake.io/
 ## Definition
 
 ## Practices
+
+### OWASP TESTING GUIDE 4.0
+Testing Techniques
+* Manual Inspections & Reviews
+* Threat Modeling (NIST 800-30)
+* Source Code Review
+* Penetration Testing
+
+OWASP testing framework
+![OWASPTestingFramework](/images/OWASP_Testing_Guide_v4.png)
+
+Reporting
+1. Project Objective
+1. Project Scope
+1. Project Schedule
+1. Targets
+1. Limitations
+1. Findings Summary
+1. Remediation Summary
+1. Findings
+	1. Screenshots & command lines
+	1. the affected item
+	1. technical description of the issue and the affected function
+	1. resolving the issue
+	1. severity rating [1], with vector tonation if using CVSS
+
 
 ### SAST into CI/CD
 Source code analysis tools, also referred to as Static Application Security Testing (SAST) Tools, are designed to analyze source code and/or compiled versions of code to help find security flaws.
