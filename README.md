@@ -20,6 +20,7 @@ This is the right place to start
 	- [Definition](#definition-1)
 	- [Practices](#practices-1)
 		- [OWASP TESTING GUIDE 4.0](#owasp-testing-guide-40)
+		- [OWASP CODE REVIEW GUIDE 2.0](#owasp-code-review-guide-20)
 		- [SAST into CI/CD](#sast-into-cicd)
 		- [DAST into CI/CD](#dast-into-cicd)
 
@@ -158,6 +159,22 @@ Reporting
 	1. resolving the issue
 	1. severity rating [1], with vector tonation if using CVSS
 
+### OWASP CODE REVIEW GUIDE 2.0
+Code crawling concept (with keywords to search)
+Threat Modeling example in apendices
+Adhoc static analysis
+![OWASPAdHoc](/images/OWASP_Code_Review_Guide_v2.png)
+
+The checklist should cover the most critical security controls and vulnerability areas such as:
+* Data Validation
+* Authentication
+* Session Management
+* Authorization
+* Cryptography
+* Error Handling
+* Logging
+* Security Configuration
+* Network Architecture
 
 ### SAST into CI/CD
 Source code analysis tools, also referred to as Static Application Security Testing (SAST) Tools, are designed to analyze source code and/or compiled versions of code to help find security flaws.
