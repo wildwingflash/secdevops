@@ -20,6 +20,9 @@ Este documento ha de servir como pauta a la hora de identificar y comprobar los 
 ## Cumplimiento: tipos de requisitos
 
 ### **Legal**
+- [GDPR] (https://ec.europa.eu/info/law/law-topic/data-protection_en)
+- [BOE Protección de datos] (https://www.boe.es/legislacion/codigos/codigo.php?id=055_Proteccion_de_Datos_de_Caracter_Personal&modo=1)
+- [BOE Ciberseguridad] (https://www.boe.es/legislacion/codigos/codigo.php?id=173_Codigo_de_Derecho__de_la_Ciberseguridad&modo=1)
 
 ### **Regulación / estándar**
 
