@@ -51,10 +51,46 @@ Podemos establecer un conjunto de reglas a cumplir durante la implementación de
 Primero nos enfocaremos en las principales amenazas actuales, recopiladas por OWASP (Open Web Application Security Project), ya que son las vulnerabilidades a nivel de desarrollo de software que más impacto han causado.
 
 **Codificación de la salida:**
+
 - Llevar toda la información codificada a un sistema de confianza.
 - Utilizar un procedimiento estándar y comprovado para cada tipo de dato codificado.
+- Codificar todos los carácteres a menos que sean seguros para el interprete deseado.
+- Comprobar y limpiar la salida de información no confiable antes de dirigirla a consultas SQL, XML o LDAP.
+- Comprobar y limpiar la salida de la información no confiable antes de utilizarla para realizar comandos del sistema operativo.
 
 **Autenticación i gestión de contraseñas:**
+
+- Requerir autenticación para todas las páginas y recursos, excepto aquellos específicamente públicos.
+- Todos los procesos de autenticación han de realizarse en entornos seguros.
+- Utilizar servicios de autenticación estándars y comprobados.
+- Usar una implementación centralizada para todos los procesos de autenticación, incluyendo las librerias que llaman a servicios externos.
+- Separar la lógica de la autenticación del recurso solicitado y redireccionar a/desde el sistema de autenticación centralizado.
+- Las contraseñas nunca se podran guardar en texto plano, únicamente sus hashes. Estos hashes deberan ser con salto, de un único sentido y con algorismos considerados seguros (por ejemplo SHA-2). Además, la tabla o ficheros donde se almacenan debe ser escribible solo por la aplicación.
+- La encriptacíón de contraseñas debe realizarse solo en sistemas seguros.
+- Validar la información de autenticación solo cuando se haya obtenido toda ella, sobretodo en implementaciones secuenciales.
+- Los fallos de autenticación no deben mostrar cual parte de la autenticación es erronea, ni en visualización ni en código. Por ejemplo, NUNCA indicar si el error está en el nombre de usuario o en la contraseña.
+- Autentificar siempre al connectar con sistemas externos que disponen de información o funciones sensible.
+- Utilizar solo peticiones HTTPS POST para transmitir las credenciales de autenticación.
+- Las contraseñas no temporales se deben enviar solo a través de conexiones seguras.
+- Forzar que las contraseñas sean suficientemente complejas, acorde a las políticas establecidas (por ejemplo 8 carácteres mínimos y 3 tipos diferentes).
+- El input de contraseña debe ser ocultado en la pantalla del usuario (por ejemplo usar input type=password en formularios).
+- Deshabilitar la cuenta después de succesivos intentos fallidos de autenticación. El tiempo debe ser de pocos minutos.
+- Canviar i resetear la contraseñas deben requerir el mismo nivel de control que la creación i la autenticación.
+- Las preguntas para restablecer la contraseña deben permitir un número elevado de respuestas aleatorias
+- Si las contraseñas se resetean a través de correo, utilizar solo direcciones previmente registradas y contraseñas/links temporales.
+- Las contraseñas y links temporales deben expirar después de un periodo corto de tiempo.
+- Procurar que las contraseñas temporales sean cambiadas por el usuario al siguiente uso.
+- Notificar al usuario cada vez que la contraseña sea cambiada.
+- No permitir que se puede cambiar la contraseña por una ya utilizada anteriormente.
+- Las contraseñas deben tener como mínimo un dia antes de poder ser cambiadas nuevamente.
+- Forzar el cambio de contraseñas segun las políticas establecidas. Los sistemas mas críticos requieren cambios mas frecuentes.
+- Deshabilitar la funcionalidad de "recuerdame" en los campos de contraseña.
+- El último intento (válido o no) de autenticación debe ser notificado al usuario en el siguiente login correcto.
+- Monitorear para identificar el intento de autenticación en distintas cuantas con la misma contraseña.
+- Cambiar todas las contraseñas por defecto i identificadores de usuario o deshabilitar las cuentas asociadas.
+- Volver a autenticar a los usuarios antes de realizar operaciones críticas.
+- Utilizar autenticación en múltiples pasos para operaciones o información sensible. (Algo que sabes, algo que tienes, algo que eres).
+- Si se utiliza código de terceros para autenticarse, inspeccionar el código detalladamente.
 
 **Gestión de la sessión:**
 
