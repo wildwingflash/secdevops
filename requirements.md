@@ -48,6 +48,8 @@ Podemos establecer un conjunto de reglas a cumplir durante la implementación de
 Primero nos enfocaremos en las principales amenazas actuales, recopiladas por OWASP (Open Web Application Security Project), ya que son las vulnerabilidades a nivel de desarrollo de software que más impacto han causado.
 
 **Codificación de la salida:**
+- Llevar toda la información codificada a un sistema de confianza.
+- Utilizar un procedimiento estándar y comprovado para cada tipo de dato codificado.
 
 **Autenticación i gestión de contraseñas:**
 
