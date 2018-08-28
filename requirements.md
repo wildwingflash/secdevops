@@ -23,7 +23,7 @@ Este documento ha de servir como pauta a la hora de identificar y comprobar los 
 - [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection_en)
 - [BOE Protección de datos](https://www.boe.es/legislacion/codigos/codigo.php?id=055_Proteccion_de_Datos_de_Caracter_Personal&modo=1)
 - [BOE Ciberseguridad](https://www.boe.es/legislacion/codigos/codigo.php?id=173_Codigo_de_Derecho__de_la_Ciberseguridad&modo=1)
-
+- [PSD/PSD2](https://ec.europa.eu/info/law/payment-services-psd-2-directive-eu-2015-2366_en)
 ### **Regulación / estándar**
 
 ### **Normativos / políticas internas**
