@@ -114,7 +114,27 @@ Podemos establecer un conjunto de reglas a cumplir durante la implementación de
 
 **Control de acceso:**
 
-**Funciones criptográficas:**
+- No permitir ningún acceso en caso de que la aplicación no pueda acceder a su información de la configuación de seguridad.
+- Implementar los controles de autenticación en cada petición, incluso aquellas que provengan de scripts del servidor, "includes" o peticiones asíncronas (por ejemplo AJAX) des del cliente.
+- Separar la lógica de permisos del resto del código de la aplicación.
+- Restringir el acceso a ficheros y otros recursos solo para usuarios autorizados.
+- Restringir el acceso a URLs protegidas solo para usuarios autorizados.
+- Restringir el acceso a funciones protegidas solo para usuarios autorizados.
+- Restringir el acceso a servicios solo para usuarios autorizados.
+- Restringir el acceso a la información de la aplicación solor para usuarios autorizados.
+- Restringir el acceso a la información sobre los usuarios a través de controles de acceso.
+- Restringir el acceso a la información sobre la configuracion de seguridad.
+- Si el estado de la información debe almaenarse en el cliente, una mecanismos de encriptación y comprobaciones de integridad en el lado del servidor.
+- Limita el número de transacciones que un solo usuario o dispositivo puede hacer durante un peridodo de tiempo.
+- Si se permiten sesiones de larga duración, válida periodicamente que los permisos del usuario no hayan cambiado. En caso de cambio, haz un logout y fuerza al usuario a autenticarse nuevamente.
+- Audita las cuentas de usuario y fuerza la desactivación de aquellas sin uso.
+- Las cuentas asociadas a servicios o aquellas que permitan conexiones desde/para sistemas externos deberan tenir los mínimos permisos posibles.
+
+**Prácticas criptográficas:**
+
+- Todas los algorismos de encriptación usados para proteger información confidencial deben ejecutarse en sistemas de confianza.
+- Los módulos de encriptación deben fallar de forma segura.
+- Establecer y utilizar una política y procedimiento sobre como seran gestionadas las claves necesarias en algorismos de encriptación.
 
 **Captura de errores y registro:**
 
