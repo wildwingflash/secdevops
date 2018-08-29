@@ -138,6 +138,14 @@ Podemos establecer un conjunto de reglas a cumplir durante la implementación de
 
 **Captura de errores y registro:**
 
+- No mostrar información sensible en respuestas de error, incluyendo detalles del sistema, identificadores de sesión o información de cuentas.
+- No mostrar información de debug ni traza (stack trace).
+- Implementar mensages de error genéricos y páginas de error personalizadas.
+- Liberar la memoria de los procesos interrumpidos al ocurrir un error.
+- La lógica de captura de errores asociada a los controles de seguridad debe denegar por defecto el acceso.
+- Todos los controles de registro seben ser implementados en un sistema de confianza.
+- Los controles de registro deben aplicarse tanto para eventos correctos como fallidas.
+
 **Seguridad de la comunicacióm:**
 
 **Configuración del sistema:**
