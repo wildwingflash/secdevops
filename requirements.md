@@ -94,6 +94,24 @@ Podemos establecer un conjunto de reglas a cumplir durante la implementación de
 
 **Gestión de la sessión:**
 
+- Utiliza los controles de session propios del servidor o framework. La aplicación solo deberia reconocer estos como válidos.
+- La creación del identificador de sesión siempre ha de realizarse en un sistema de confianza.
+- Los controles de sesión deberan usar algorismos comprobados que proporcionen suficientes identificadores de sesión aleatorios.
+- Definir el dominio y la ruta de las cookies que contienen identificadores de sesión a un valor restringido para el sitio.
+- La funcionalidad de logout deberia terminar completamente con la sesión o conexión asociada.
+- La funcionalidad de logout deberia estar disponible en todas páginas protegidas con autenticación previa.
+- Establecer un tiempo de inactividad para terminar la sesión tan corto como sea posible, considerando el riesgo y la funcionalidad del negocio.
+- Desactivar los logins permanentes y forzar la terminación de la sesión incluso estando la sesión activa.
+- Si la sesión fué establecida antes del login, termina esa sesión y establece una nueva después de autenticarse correctamente.
+- Generar un nuevo identificador de sesión en cada autenticación.
+- No permitir logins simultaneos con el mismo identificador de usuario.
+- No exponer los identificadores de sesión en URLs, mensajes de error o logs.
+- Proteger la información de sesión de accesos no autorizados desde otros usuarios de la aplicación.
+- Generar un nuevo identificador de sesión si la conexión cambia de HTTP a HTTPS. De todos modos, se deberia usar siempre HTTPS.
+- Añade mas mecanismos de control de sesion para operaciones críticas en el servidor, controles por cada petición, como tokens aleatorios o parámetros.
+- Verifica el atributo "secure" para las cookies transmitidas a través de una conexión SSL/TLS.
+- Define las cookies con el atributo "HttpOnly", a menos que necesites acceder a ellas des de scripts en el cliente.
+
 **Control de acceso:**
 
 **Funciones criptográficas:**
